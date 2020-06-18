@@ -81,8 +81,8 @@ class App extends React.Component {
 
   getFeedbackForWord(letter) {
     const { matchedLettersIndices } = this.state;
-    const indexMatched = matchedLettersIndices.includes(letter);
-    return indexMatched ? 'visible' : 'hidden';
+    const letterMatched = matchedLettersIndices.includes(letter);
+    return letterMatched ? 'visible' : 'hidden';
   }
 
   render() {
